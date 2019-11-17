@@ -45,15 +45,15 @@ public class UsuarioFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-
-        bienvenidoLabel.setText("jLabel1");
         jPanel1.add(bienvenidoLabel);
 
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel1.setText("Cuenta en pesos");
-        jPanel2.add(jLabel1);
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 9, -1, -1));
 
         saldoTxField.setText("0.00");
-        jPanel2.add(saldoTxField);
+        jPanel2.add(saldoTxField, new org.netbeans.lib.awtextra.AbsoluteConstraints(243, 5, 140, -1));
 
         retirarBtn.setText("Retirar");
         btnsPanel.add(retirarBtn);
@@ -82,7 +82,7 @@ public class UsuarioFrame extends javax.swing.JFrame {
         );
         btnActionsPanelLayout.setVerticalGroup(
             btnActionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 168, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -94,11 +94,8 @@ public class UsuarioFrame extends javax.swing.JFrame {
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnActionsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
+                .addComponent(btnsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 398, Short.MAX_VALUE))
+            .addComponent(btnActionsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,7 +108,8 @@ public class UsuarioFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnActionsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnActionsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -161,14 +159,14 @@ public class UsuarioFrame extends javax.swing.JFrame {
     public javax.swing.JLabel bienvenidoLabel;
     public javax.swing.JPanel btnActionsPanel;
     public javax.swing.JPanel btnsPanel;
-    private javax.swing.JButton depositarBtn;
+    public javax.swing.JButton depositarBtn;
     private javax.swing.JLabel imageLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JButton retirarBtn;
+    public javax.swing.JButton retirarBtn;
     public javax.swing.JTextField saldoTxField;
-    private javax.swing.JButton salirBtn;
+    public javax.swing.JButton salirBtn;
     // End of variables declaration//GEN-END:variables
 }

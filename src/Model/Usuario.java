@@ -16,12 +16,14 @@ public class Usuario {
     public String lastName;
     public String noCuenta;
     public float saldoInicial;
+    public int nip;
 
-    public Usuario(String name, String lastName, String noCuenta, float saldoInicial) {
+    public Usuario(String name, String lastName, String noCuenta, float saldoInicial, int nip) {
         this.name = name;
         this.lastName = lastName;
         this.noCuenta = noCuenta;
         this.saldoInicial = saldoInicial;
+        this.nip = nip;
     }
     
     

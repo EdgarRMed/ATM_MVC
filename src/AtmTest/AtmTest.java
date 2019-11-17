@@ -5,7 +5,6 @@
  */
 
 package AtmTest;
-
 import Controler.Controler;
 import Model.Model;
 import View.Cajero;

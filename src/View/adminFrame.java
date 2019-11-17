@@ -47,7 +47,7 @@ public class adminFrame extends javax.swing.JFrame {
         jLabel1.setText("ADMINISTRADOR BANCARIO");
         titlePanel.add(jLabel1);
 
-        jPanel2.setLayout(new java.awt.GridLayout());
+        jPanel2.setLayout(new java.awt.GridLayout(1, 0));
 
         altaBtn.setText("Alta cliente");
         jPanel2.add(altaBtn);
@@ -68,7 +68,7 @@ public class adminFrame extends javax.swing.JFrame {
         );
         operatorPanelLayout.setVerticalGroup(
             operatorPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 183, Short.MAX_VALUE)
+            .addGap(0, 336, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

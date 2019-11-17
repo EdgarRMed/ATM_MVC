@@ -150,6 +150,7 @@
         </Component>
         <Component class="javax.swing.JPasswordField" name="nipPswField">
           <AuxValues>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="nipPswField.addKeyListener(new KeyListener(){&#xa;public void keyTyped(KeyEvent e)&#xa; &#xa;{if (nipPswField.getText().length()== 4)&#xa; &#xa;     e.consume();&#xa;}&#xa; &#xa;public void keyPressed(KeyEvent arg0) {&#xa;}&#xa; &#xa;public void keyReleased(KeyEvent arg0) {&#xa;}&#xa;});"/>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>

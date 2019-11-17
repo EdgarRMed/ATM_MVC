@@ -5,6 +5,9 @@
  */
 package View;
 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
 /**
  *
  * @author Sammy Guergachi <sguergachi at gmail.com>
@@ -100,6 +103,21 @@ public class clienteFrame extends javax.swing.JFrame {
                     .addComponent(nipPswField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(81, Short.MAX_VALUE))
         );
+
+        nipPswField.addKeyListener(new KeyListener(){
+            public void keyTyped(KeyEvent e)
+
+            {if (nipPswField.getText().length()== 4)
+
+                e.consume();
+            }
+
+            public void keyPressed(KeyEvent arg0) {
+            }
+
+            public void keyReleased(KeyEvent arg0) {
+            }
+        });
 
         jPanel2.setLayout(new java.awt.BorderLayout());
 
